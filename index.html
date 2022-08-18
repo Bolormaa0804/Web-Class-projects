@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pax Mongolica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="javascript" href="jscript.js">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600|ZCOOL+XiaoWei" rel="stylesheet">
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+	<script>
+    	AOS.init();
+    	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function myFunction1() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  	</script>
+	<header>
+		<video autoplay muted loop id="myVideo">
+			<source src="mongolia.mp4" type="video/mp4">
+  			Your browser does not support HTML5 video.
+		</video>
+		<div class="overlay"></div>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<div class="mobile-container">
+		<div class="topnav">
+  		<a href="#home" class="active">Menu</a>
+  		<div id="myLinks">
+  				<a href="index.html">Home Page</a>
+				<a href="about.html">About</a>
+				<a href="index.html#paxmongolica">Pax Mongolica</a>
+				<a href="blog.html">Blog Posts</a>
+				<a href="resource.html">Resource</a>
+  		</div>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+    		<i class="fa fa-bars"></i>
+  		</a>
+		</div>
+		</div>
+		<nav>
+			<ul>
+				<a href="index.html" class="active"><li class="active">Home</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="index.html#paxmongolica"><li>Pax Mongolica</li></a>
+				<a href="blog.html"><li>Blog Posts</li></a>
+				<a href="resource.html"><li>Resource</li></a>
+			</ul>
+		</nav>
+		<div class="title">
+			<h1>
+				Welcome to <b>PAX MONGOLICA</b>
+			</h1>
+			<p>
+				the period of relative peace that followed the Mongols' vast conquests.
+			</p>
+		</div>
+		<a class="scroll" href="#paxmongolica" address="true"><i class="fas fa-chevron-down"></i></a>
+	</header>
+	<section id="paxmongolica">
+		<h1>What Is Pax Mongolica ?</h1>
+		<div class="content">
+		<p>
+			<b style="font-family: 'ZCOOL XiaoWei'; font-size: 130%;">The Pax Mongolica</b> (Latin for <i>"Mongol Peace"</i> ), is a historiographical term modelled after the original phrase Pax Romana which describes the stabilizing effects of the conquests of the Mongol Empire on the social, cultural and economic life of the inhabitants of the vast Eurasian territory that the Mongols conquered in the 13th and 14th centuries. 
+			<br><br><i>The term is used to describe the eased communication and commerce the unified administration helped to create and the period of relative peace that followed the Mongols' vast conquests.</i>
+		</p>
+		<img src="images/map1.png">
+ 		</div>
+ 		<a class="scroll" href="#links" address="true"><i class="fas fa-chevron-down"></i></a>
+	</section>
+
+	<footer>
+	<section id="links">
+			<div data-aos="fade-down" data-aos-duration="2000" class="container">
+				<a href="about.html">
+ 				<img src="images/genghis.jpg" class="image">
+  				<div class="overlay">
+    				<p>About</p>
+  				</div>
+  				</a>
+			</div>
+			<div data-aos="fade-down" data-aos-duration="2000" class="container">
+				<a href="blog.html">
+ 				<img src="images/merkit.jpg" class="image">
+  				<div class="overlay">
+    				<p>Blog Posts</p>
+  				</div>
+  				</a>
+			</div>
+			<div data-aos="fade-down" data-aos-duration="2000" class="container">
+				<a href="resource.html">
+ 				<img src="images/queen.jpeg" class="image">
+  				<div class="overlay">
+    				<p>Resource</p>
+  				</div>
+  				</a>
+			</div>
+	</section>
+		<div class="footer">
+			<h1>❝ I did not write half of what I saw, for I knew I would not be believed ❞</h1>
+			<h2>- Marco Polo</h2>
+		<p class="copyright">Copyright © 2019 Qsoftwares</p>
+		<div class="footer-icons">
+
+					<a href="https://www.facebook.com/ecigcityfargo/"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/ecigcitynd/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
